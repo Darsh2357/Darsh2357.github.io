@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>World News / GlobalInfo.in</title>
+	<link rel="icon" type="image/jpg" href="https://th.bing.com/th/id/OIP.ioDuk3HIBL4wvchQy4jqbAHaHa?w=143&h=160&c=7&o=5&pid=1.7">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		#loader{
+			width: 200px;
+			height: 200px;
+			border: solid 15px lightgrey;
+			border-radius: 100%;
+			border-top: solid 15px red;
+			margin-top: 200px;
+			margin-left: 555px;
+			animation-name: loading;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+
+		}
+		@keyframes loading{
+            0%{transform: rotate(0deg);}
+			100%{transform: rotate(360deg);}			
+		}
+		body{
+			background-image: url('https://motionarray.imgix.net/preview-221009-qr45Mrcxf8-high_0000.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			color: white;
+
+		}
+		ul{
+			list-style-type: none;
+			background-image: linear-gradient(to right, red, blue, green, orange);
+			padding: 30px;
+		}
+		li{
+			display: inline;
+			color: white;
+		}
+		.bruh{
+			float: right;
+		}
+		.go{
+			text-decoration: none;
+			padding: 30px;
+			color: white;
+		}
+		.go:hover{
+			background-color: lightgrey;
+		}
+		.fa{
+			font-size: 60px;
+			color: red;
+			text-align: center;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body onload="book()">
+	<div id="loader"></div>
+	<div id="webpage" class="animation" style="display: none;">
+		<ul>
+			<li>Welcome to GlobalInfo!</li>
+			<li class="bruh"><a href="loginpage2.html" class="go">Register</a></li>
+			<li class="bruh"><a href="loginpage1.html" class="go">Login</a></li>
+
+		</ul>
+		<button onclick="wat()">What is GlobalInfo?</button>
+		<h1 id="blah" style="display: none;">Welcome to GlobalInfo!</h1>
+		<p id="bluh" style="display: none;">GlobalInfo is a site where you can find the latest news updates and daily information.<br>What are you waiting for, register now!<br>Press "Login" to log in to your GlobalInfo account.</p>
+		<h1 id="brh" style="display: none;">Contact us on our email for any further information: GlobalInfo@gmail.com.<br>
+		Do follow us on Twitter, Instagram and Youtube! Links right below.</h1>
+		<br><br><br><br><br><br><br>
+	</div>
+	<div id="social" style="display: none;">
+		<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+		<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+		<a href="https://www.youtube.com" class="fa fa-youtube"></a>
+	</div>
+	
+</body>
+</html>
+<script type="text/javascript">
+	function book(){
+		setTimeout(showText, 3000);
+	}
+	function showText(){
+		document.getElementById('loader').style.display="none";
+		document.getElementById('webpage').style.display="block"
+	}
+	function wat(){
+		document.getElementById('blah').style.display="block"
+		document.getElementById('bluh').style.display="block"
+		document.getElementById('brh').style.display="block"
+		document.getElementById('blah').style.textAlign="center"
+		document.getElementById('bluh').style.textAlign="center"
+		document.getElementById('brh').style.textAlign="center"
+		document.getElementById('social').style.display="block"
+		document.getElementById('social').style.textAlign="center"
+
+	}
+</script>

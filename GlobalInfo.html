@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page / GlobalInfo</title>
+	<link rel="icon" type="image/jpg" href="https://th.bing.com/th/id/OIP.ioDuk3HIBL4wvchQy4jqbAHaHa?w=143&h=160&c=7&o=5&pid=1.7">
+	<style type="text/css">
+		#loader{
+			width: 200px;
+			height: 200px;
+			border: solid 15px lightgrey;
+			border-radius: 100%;
+			border-top: solid 15px red;
+			margin-top: 200px;
+			margin-left: 555px;
+			animation-name: loading;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+
+		}
+		@keyframes loading{
+            0%{transform: rotate(0deg);}
+			100%{transform: rotate(360deg);}			
+		}
+		body{
+			background-image: url('https://motionarray.imgix.net/preview-221009-qr45Mrcxf8-high_0000.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			color: white;
+
+		}
+		ul{
+			list-style-type: none;
+			background-image: linear-gradient(to right, red, blue, green, orange);
+			padding: 30px;
+		}
+		li{
+			display: inline;
+			color: white;
+		}
+		.bruh{
+			float: right;
+		}
+		.go{
+			text-decoration: none;
+			padding: 30px;
+			color: white;
+		}
+		.go:hover{
+			background-color: lightgrey;
+		}
+	</style>
+</head>
+<body onload="book()">
+	<div id="loader"></div>
+	<div id="webpage" class="animation" style="display: none;">
+		<ul>
+			<li>GlobalInfo</li>
+			<li class="bruh"><a href="loginpage1.html" class="go">Switch Account</a></li>
+
+		</ul>
+		<center>
+		<a href="https://www.ndtv.com/india-news/bengal-calls-for-army-support-for-help-in-restoring-infrastructure-hit-by-cyclone-amphan-2233953?pfrom=home-bigstory">
+	<img src="news1.png"></a>
+	<a href="https://www.ndtv.com/india-news/coronavirus-domestic-flights-quarantine-aarogya-setu-dont-understand-quarantine-need-if-aarogya-setu-shows-green-aviation-minister-2233904?pfrom=home-topscroll">
+		<img src="news2.png">
+	</a>
+	<a href="https://www.ndtv.com/india-news/mamata-banerjees-move-earns-rare-approval-from-west-bengal-governor-jagdeep-dhankar-2234012?pfrom=home-topscroll">
+		<img src="news3.png">
+	</a>
+	<br>
+	<a href="https://www.ndtv.com/delhi-news/delhi-mango-seller-receives-donations-after-loot-says-thankful-to-everyone-2233961?pfrom=home-topscroll">
+		<img src="news4.png">
+	</a>
+	<a href="https://sports.ndtv.com/cricket/shardul-thakur-becomes-first-india-cricketer-to-resume-outdoor-training-post-coronavirus-break-2234014?pfrom=home-lateststories">
+		<img src="news5.png">
+	</a>
+	<a href="https://sports.ndtv.com/cricket/virat-kohlis-dinosaur-walk-is-now-a-social-media-rage-thanks-to-these-awesome-memes-2233866?pfrom=home-lateststories">
+		<img src="news6.png">
+	</a>
+	<br>
+	<a href="https://swirlster.ndtv.com/beauty/malaika-arora-is-setting-seriously-fabulous-bare-skin-goals-this-summer-2233861?pfrom=home-toppicks">
+		<img src="news7.png">
+	</a>
+	<a href="https://food.ndtv.com/webstories/food/how-to-make-mango-pista-kulfi-at-home-309?pfrom=home-toppicks">
+		<img src="news8.png">
+	</a>
+	<a href="https://www.ndtv.com/offbeat/dolphins-missing-public-attention-bring-gifts-from-the-sea-for-humans-2233170?pfrom=home-toppicks">
+		<img src="news9.png">
+	</a>
+	<a href="https://swirlster.ndtv.com/webstories/beauty/beauty-tips-to-grow-hair-long-and-healthy-at-home-317?pfrom=home-toppicks">
+		<img src="news10.png">
+	</a>
+	</div>
+	
+	
+</body>
+</html>
+<script type="text/javascript">
+	function book(){
+		setTimeout(showText, 3000);
+	}
+	function showText(){
+		document.getElementById('loader').style.display="none";
+		document.getElementById('webpage').style.display="block"
+	}
+	alert('Get information about what is happpening all over India. Recieve daily newsletters on GlobalInfo.')
+	
+</script>
