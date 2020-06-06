@@ -50,13 +50,45 @@
 		.go:hover{
 			background-color: lightgrey;
 		}
+		.modal{
+			display: none;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			left: 0px;
+			top: 0px;
+			padding-top: 100px;
+			background-color: rgba(0, 0, 0,0.5);
+		}
+		.modal-con{
+			background-color: lightgrey;
+			margin: auto;
+			padding: 20px;
+			border: solid 2px black;
+			width: 80%;
+		}
+		#close{
+			float: right;
+			color: black;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		#close:hover{
+			cursor: pointer;
+		}
 	</style>
 </head>
 <body onload="book()">
 	<div id="loader"></div>
 	<div id="webpage" class="animation" style="display: none;">
 		<ul>
-			<li>GlobalInfo</li>
+			<li><button id="myBtn">GlobalInfo</button>
+	<div id="myModal" class="modal">
+		<div class="modal-con">
+			<div id="close">x</div>
+			<p>Text</p>
+		</div>
+	</div></li>
 			<li class="bruh"><a href="loginpage1.html" class="go">Switch Account</a></li>
 
 		</ul>
@@ -105,6 +137,14 @@
 		document.getElementById('loader').style.display="none";
 		document.getElementById('webpage').style.display="block"
 	}
-	alert('Get information about what is happpening all over India. Recieve daily newsletters on GlobalInfo.')
+	var modal = document.getElementById('myModal')
+	var btn = document.getElementById('myBtn')
+	var close = document.getElementById('close')
+	btn.onclick = function(){
+		modal.style.display="block"
+	}
+	close.onclick = function(){
+		modal.style.display="none"
+	}
 	
 </script>
