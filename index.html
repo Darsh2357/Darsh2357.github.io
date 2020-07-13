@@ -8,9 +8,7 @@
 		#loader{
 			width: 200px;
 			height: 200px;
-			border: solid 15px lightgrey;
 			border-radius: 100%;
-			border-top: solid 15px red;
 			margin-top: 200px;
 			margin-left: 555px;
 			animation-name: loading;
@@ -19,9 +17,7 @@
 			animation-timing-function: linear;
 
 		}
-		@keyframes loading{
-            0%{transform: rotate(0deg);}
-			100%{transform: rotate(360deg);}			
+		@keyframes loading{		
 		}
 		body{
 			background-image: url('https://motionarray.imgix.net/preview-221009-qr45Mrcxf8-high_0000.jpg');
@@ -57,10 +53,14 @@
 			text-align: center;
 			text-decoration: none;
 		}
+		#loadsss{
+			height: 240px;
+			width: 240px;
+		}
 	</style>
 </head>
 <body onload="book()">
-	<center><div id="loader"><img src="https://media.giphy.com/media/FrOlhISiIhAFa/giphy-downsized-large.gif"></div></center>
+	<center><div id="loader"><img src="https://media.giphy.com/media/FrOlhISiIhAFa/giphy-downsized-large.gif" id="loadsss"></div></center>
 	<div id="webpage" class="animation" style="display: none;">
 		<ul>
 			<li>Welcome to GlobalInfo!</li>
